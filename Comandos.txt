@@ -1,0 +1,26 @@
+Comando
+//version del git
+ git --version
+ //ayuda git
+ git help
+// ayuda del comando commit
+ git help commit
+//Configurar git; con esta configuracion al subir los cambios se colocara mis datos, de esta manera se sabra quien subio los cambios desde mi maquina
+git user.name "Pablo"
+git user.email "pablo.nolasco@live.com.mx"
+//abrir archivo de configuracion; presionar qw para salir del archivo :wq
+git config --global -e
+//Pagina para descargar demo
+http://www.initializr.com/
+
+//Inicializar git o repositorio
+git init
+// mostrar todos los archivos de la carpeta; debe aparecer .git despues del comando git init
+ls -al
+
+// Comando para observar el satus de los archivos, se muestra en rojo porque no se ha indicado que los archivos pertencen a un lugar; si muestra en verde es que se registraron los archivos
+git status
+//Comando para indicar que todos los archivos para que este pendiente de los cambios
+git add .
+//Commit
+git commit -m Primer comit
