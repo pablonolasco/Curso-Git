@@ -11,6 +11,8 @@ git user.name "Pablo"
 git user.email "pablo.nolasco@live.com.mx"
 //abrir archivo de configuracion; presionar qw para salir del archivo :wq
 git config --global -e
+//abrir archivo de configuracion y muestra lo alias; presionar qw para salir del archivo :wq
+git config --global -e -l
 //Pagina para descargar demo
 http://www.initializr.com/
 
@@ -70,7 +72,15 @@ git checkout README.md
 git commit -m Primer comit
 //Regresar al ultimo commit
 git checkout -- .
+// Agrega al stage y genera el commit
+git commit -am "mensaje"
+// modificar el ultimo mensaje del commit
+git commit --amend -m "actualizar el ultimo mensaje"
 
+//HEAD apunta al ultimo commit
+git reset --soft HEAD^ ,apunta al ultimo commit con ese simbolo, y al ejecutar ese comando aparece ambas M en verde y rojo, para agregar los archivos faltantes
+//comando para regresar a un commit en especifico
+git reset had 920d8a1, numero del commit te regresa ahi
 /****Comandos git log***************/
 // Muestra los commit en forma de cronologia de abajo hacia arriba, el ultimo commit viene en en la cabecera HEAD->Master
 git log
